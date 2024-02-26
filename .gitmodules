@@ -1,9 +1,9 @@
 [submodule "firmware"]
 	path = firmware
-	url = https://github.com/Legohead259/MicroROS-ESC-Firmware
+	url = https://github.com/Legohead259/OlympianESC-Firmware
 [submodule "hardware"]
 	path = hardware
-	url = https://github.com/Legohead259/Micro-ROS-ESC-Hardware
+	url = https://github.com/Legohead259/OlympianESC-Hardware
 [submodule "workspace"]
 	path = workspace
-	url = https://github.com/Legohead259/ROS2-Micro-ROS-ESC-Workspace
+	url = https://github.com/Legohead259/OlympianESC-Workspace
