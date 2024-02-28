@@ -10,7 +10,7 @@ Welcome to OlympianESC's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-
+   firmware/firmware_index
 
 Indices and tables
 ==================
