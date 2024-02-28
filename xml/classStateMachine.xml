@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classStateMachine" kind="class" language="C++" prot="public">
+    <compoundname>StateMachine</compoundname>
+    <derivedcompoundref refid="classLEDStateMachine" prot="public" virt="non-virtual">LEDStateMachine</derivedcompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classStateMachine_1a2a66289bc12dcbc88266ef25c2f1491a" prot="protected" static="no" mutable="no">
+        <type>State &amp;</type>
+        <definition>State&amp; StateMachine::currentState</definition>
+        <argsstring></argsstring>
+        <name>currentState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="firmware/include/state_machine.h" line="31" column="11" bodyfile="firmware/include/state_machine.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classStateMachine_1a758c235d91376142e3bd137e5f894bac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>StateMachine::StateMachine</definition>
+        <argsstring>(State &amp;initialState)</argsstring>
+        <name>StateMachine</name>
+        <param>
+          <type>State &amp;</type>
+          <declname>initialState</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="firmware/include/state_machine.h" line="24" column="5" bodyfile="firmware/include/state_machine.h" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classStateMachine_1a2104bc41da7c2e3142635bfeb9bbfe58" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void StateMachine::executeState</definition>
+        <argsstring>()</argsstring>
+        <name>executeState</name>
+        <reimplementedby refid="classLEDStateMachine_1a5553c8f564dead6ffa8c5f716e6a82cd">executeState</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="firmware/include/state_machine.h" line="27" column="18" bodyfile="firmware/include/state_machine.h" bodystart="27" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>LEDStateMachine</label>
+        <link refid="classLEDStateMachine"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>StateMachine</label>
+        <link refid="classStateMachine"/>
+      </node>
+    </inheritancegraph>
+    <location file="firmware/include/state_machine.h" line="22" column="1" bodyfile="firmware/include/state_machine.h" bodystart="22" bodyend="32"/>
+    <listofallmembers>
+      <member refid="classStateMachine_1a2a66289bc12dcbc88266ef25c2f1491a" prot="protected" virt="non-virtual"><scope>StateMachine</scope><name>currentState</name></member>
+      <member refid="classStateMachine_1a2104bc41da7c2e3142635bfeb9bbfe58" prot="public" virt="virtual"><scope>StateMachine</scope><name>executeState</name></member>
+      <member refid="classStateMachine_1a758c235d91376142e3bd137e5f894bac" prot="public" virt="non-virtual"><scope>StateMachine</scope><name>StateMachine</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

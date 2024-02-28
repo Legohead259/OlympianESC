@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_dfb3d22af65005d8b3166a09b4fbee32" kind="dir">
+    <compoundname>firmware/src/examples/micro-ros_reconnection</compoundname>
+    <innerfile refid="micro-ros__reconnection_8cpp">micro-ros_reconnection.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="firmware/src/examples/micro-ros_reconnection/"/>
+  </compounddef>
+</doxygen>

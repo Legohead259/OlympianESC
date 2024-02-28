@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_88b46969c26bc30c4b9f74852d12044d" kind="dir">
+    <compoundname>firmware/src/examples</compoundname>
+    <innerdir refid="dir_68696e4b863ace51332c910313ef38f1">firmware/src/examples/factory</innerdir>
+    <innerdir refid="dir_dfb3d22af65005d8b3166a09b4fbee32">firmware/src/examples/micro-ros_reconnection</innerdir>
+    <innerdir refid="dir_5bf8eb7866e47bb7cec71b79841b96b4">firmware/src/examples/tmag5273_test</innerdir>
+    <innerdir refid="dir_602954aeb87a5cacfe2de293c42c0c6e">firmware/src/examples/utils</innerdir>
+    <innerdir refid="dir_fb623056f0fef39e138767be0236cbf0">firmware/src/examples/velocity_controller</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="firmware/src/examples/"/>
+  </compounddef>
+</doxygen>

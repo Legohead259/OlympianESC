@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="state__machine_8h" kind="file" language="C++">
+    <compoundname>state_machine.h</compoundname>
+    <includedby refid="state__machine_8cpp" local="yes">firmware/src/state_machine.cpp</includedby>
+    <includedby refid="micro__ros____definitions_8h" local="yes">firmware/include/micro_ros__definitions.h</includedby>
+    <includedby refid="neopixel_8h" local="yes">firmware/include/neopixel.h</includedby>
+    <innerclass refid="classStateMachine" prot="public">StateMachine</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="state__machine_8h_1a5d74787dedbc4e11c1ab15bf487e61f8" prot="public" static="no" strong="no">
+        <type></type>
+        <name>State</name>
+        <enumvalue id="state__machine_8h_1a5d74787dedbc4e11c1ab15bf487e61f8a97fa0c4089afb13fd4cf8d01264ba6eb" prot="public">
+          <name>IDLE_NO_CONNECTION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="state__machine_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ad58a21316a5ebb9bfc2af3c8ec753917" prot="public">
+          <name>IDLE_WITH_CONNECTION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="state__machine_8h_1a5d74787dedbc4e11c1ab15bf487e61f8a30b37da141505d0953465840bfe4f2bf" prot="public">
+          <name>PARTIAL_FORWARD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="state__machine_8h_1a5d74787dedbc4e11c1ab15bf487e61f8af9e1ae00226af7dc2c40c28d87f94333" prot="public">
+          <name>PARTIAL_REVERSE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="state__machine_8h_1a5d74787dedbc4e11c1ab15bf487e61f8a2b8c762d7281d97b75ac497c10bf384d" prot="public">
+          <name>FULL_FORWARD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="state__machine_8h_1a5d74787dedbc4e11c1ab15bf487e61f8a5813b277c15e7951bc5ccf99497bfa87" prot="public">
+          <name>FULL_REVERSE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="state__machine_8h_1a5d74787dedbc4e11c1ab15bf487e61f8a8b0c281ff4234fb52fee358960418ee4" prot="public">
+          <name>DEVICE_IDENTIFY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="state__machine_8h_1a5d74787dedbc4e11c1ab15bf487e61f8aefd32de581cfe881ef211d48f3df6218" prot="public">
+          <name>MOTOR_DISABLED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="state__machine_8h_1a5d74787dedbc4e11c1ab15bf487e61f8a2fb21173a5d10d20feb06f3462185b41" prot="public">
+          <name>SENSOR_FAULT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="state__machine_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ab83050c7b2393ab56158925c5af0a120" prot="public">
+          <name>DRIVER_FAULT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="state__machine_8h_1a5d74787dedbc4e11c1ab15bf487e61f8a883ea94e299113ade2bfa53bc5286ca1" prot="public">
+          <name>TRANSPORT_FAULT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="firmware/include/state_machine.h" line="5" column="1" bodyfile="firmware/include/state_machine.h" bodystart="5" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="state__machine_8h_1ae845c503c2ab2c9adf1d1068fe66c66e" prot="public" static="no" mutable="no">
+        <type>State</type>
+        <definition>State systemState</definition>
+        <argsstring></argsstring>
+        <name>systemState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="firmware/include/state_machine.h" line="19" column="14" bodyfile="firmware/src/state_machine.cpp" bodystart="3" bodyend="-1" declfile="firmware/include/state_machine.h" declline="19" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="variable" id="state__machine_8h_1aba87b71c8ddf828d5fe0fcb3b5a0700b" prot="public" static="no" mutable="no">
+        <type>State</type>
+        <definition>State previousSystemState</definition>
+        <argsstring></argsstring>
+        <name>previousSystemState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="firmware/include/state_machine.h" line="20" column="14" bodyfile="firmware/src/state_machine.cpp" bodystart="4" bodyend="-1" declfile="firmware/include/state_machine.h" declline="20" declcolumn="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="state__machine_8h_1afadf1f0486e8228784a5fdd00cd82148" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void changeSystemState</definition>
+        <argsstring>(State newState)</argsstring>
+        <name>changeSystemState</name>
+        <param>
+          <type>State</type>
+          <declname>newState</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="firmware/include/state_machine.h" line="34" column="13" bodyfile="firmware/include/state_machine.h" bodystart="34" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>STATE_MACHINE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STATE_MACHINE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Enum<sp/>to<sp/>represent<sp/>different<sp/>states</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>State<sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>IDLE_NO_CONNECTION,</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>IDLE_WITH_CONNECTION,</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>PARTIAL_FORWARD,</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>PARTIAL_REVERSE,</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>FULL_FORWARD,</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>FULL_REVERSE,</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>DEVICE_IDENTIFY,</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>MOTOR_DISABLED,</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>SENSOR_FAULT,</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>DRIVER_FAULT,</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>TRANSPORT_FAULT</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>State<sp/>systemState;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>State<sp/>previousSystemState;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classStateMachine" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classStateMachine" kindref="compound">StateMachine</ref><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classStateMachine" kindref="compound">StateMachine</ref>(State<sp/>&amp;initialState)<sp/>:<sp/>currentState(initialState)<sp/>{}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Function<sp/>to<sp/>perform<sp/>actions<sp/>based<sp/>on<sp/>the<sp/>current<sp/>state</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>executeState()<sp/>{};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Variable<sp/>to<sp/>store<sp/>the<sp/>current<sp/>state</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>State<sp/>&amp;currentState;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>changeSystemState(State<sp/>newState)<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>previousSystemState<sp/>=<sp/>systemState;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>systemState<sp/>=<sp/>newState;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>STATE_MACHINE_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="firmware/include/state_machine.h"/>
+  </compounddef>
+</doxygen>

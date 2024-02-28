@@ -1,0 +1,320 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="neopixel_8h" kind="file" language="C++">
+    <compoundname>neopixel.h</compoundname>
+    <includes local="no">Adafruit_NeoPixel.h</includes>
+    <includes refid="state__machine_8h" local="yes">state_machine.h</includes>
+    <includedby refid="main_8cpp" local="yes">firmware/src/main.cpp</includedby>
+    <includedby refid="neopixel_8cpp" local="yes">firmware/src/neopixel.cpp</includedby>
+    <includedby refid="micro__ros__bldc_8h" local="yes">firmware/include/micro_ros_bldc.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>firmware/include/neopixel.h</label>
+        <link refid="neopixel_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Adafruit_NeoPixel.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>firmware/src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="1">
+        <label>firmware/include/neopixel.h</label>
+        <link refid="neopixel_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classLEDStateMachine" prot="public">LEDStateMachine</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="neopixel_8h_1a893011783fefc21f30baf08142cd3c35" prot="public" static="no">
+        <name>NUM_PIXELS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="firmware/include/neopixel.h" line="7" column="9" bodyfile="firmware/include/neopixel.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="neopixel_8h_1a2134a5a06f0865c945543a1f07eba387" prot="public" static="no">
+        <name>MAX_BRIGHTNESS</name>
+        <initializer>32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="firmware/include/neopixel.h" line="8" column="9" bodyfile="firmware/include/neopixel.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="neopixel_8h_1a1a4dc816cd79a0f3c5de1095bb094881" prot="public" static="no">
+        <name>BLINK_PERIOD</name>
+        <initializer>500</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="firmware/include/neopixel.h" line="9" column="9" bodyfile="firmware/include/neopixel.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="neopixel_8h_1ad4f24fa30082fd81530b2025b162f7dc" prot="public" static="no">
+        <name>IDENTIFY_TIMEOUT</name>
+        <initializer>5000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="firmware/include/neopixel.h" line="10" column="9" bodyfile="firmware/include/neopixel.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="neopixel_8h_1acf2771bd8bfaf855bbcc6c30301bf380" prot="public" static="no" mutable="no">
+        <type>Adafruit_NeoPixel</type>
+        <definition>Adafruit_NeoPixel strip</definition>
+        <argsstring></argsstring>
+        <name>strip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="firmware/include/neopixel.h" line="12" column="26" bodyfile="firmware/src/neopixel.cpp" bodystart="6" bodyend="-1" declfile="firmware/include/neopixel.h" declline="12" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="variable" id="neopixel_8h_1ad5dcaa56dfbc8a8336d7935a6f210fff" prot="public" static="no" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t LED_OFF</definition>
+        <argsstring></argsstring>
+        <name>LED_OFF</name>
+        <initializer>= strip.Color(0, 0, 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="firmware/include/neopixel.h" line="14" column="16" bodyfile="firmware/include/neopixel.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="neopixel_8h_1acf6845a9cc897e1e358560d1a7f0dd31" prot="public" static="no" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t WHITE</definition>
+        <argsstring></argsstring>
+        <name>WHITE</name>
+        <initializer>= strip.Color(255, 255, 255)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="firmware/include/neopixel.h" line="15" column="16" bodyfile="firmware/include/neopixel.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="neopixel_8h_1aafe9e585acf3525c1b551359a72206e0" prot="public" static="no" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t BLUE</definition>
+        <argsstring></argsstring>
+        <name>BLUE</name>
+        <initializer>= strip.Color(0, 0, 255)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="firmware/include/neopixel.h" line="16" column="16" bodyfile="firmware/include/neopixel.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="neopixel_8h_1a0865512a9bb6b19e84267299f8936daa" prot="public" static="no" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t GREEN</definition>
+        <argsstring></argsstring>
+        <name>GREEN</name>
+        <initializer>= strip.Color(0, 255, 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="firmware/include/neopixel.h" line="17" column="16" bodyfile="firmware/include/neopixel.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="neopixel_8h_1a65c666c353fdb6dc7cc726f8a5b48ddc" prot="public" static="no" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t RED</definition>
+        <argsstring></argsstring>
+        <name>RED</name>
+        <initializer>= strip.Color(255, 0, 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="firmware/include/neopixel.h" line="18" column="16" bodyfile="firmware/include/neopixel.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="neopixel_8h_1a5fa208b7248182ee653c4f083464e9c9" prot="public" static="no" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t CYAN</definition>
+        <argsstring></argsstring>
+        <name>CYAN</name>
+        <initializer>= strip.Color(0, 255, 255)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="firmware/include/neopixel.h" line="19" column="16" bodyfile="firmware/include/neopixel.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="neopixel_8h_1a7ae3fb3e6e67ffcd7770fa90a93341b7" prot="public" static="no" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t MAGENTA</definition>
+        <argsstring></argsstring>
+        <name>MAGENTA</name>
+        <initializer>= strip.Color(255, 0, 255)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="firmware/include/neopixel.h" line="20" column="16" bodyfile="firmware/include/neopixel.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="neopixel_8h_1ae91461e39bc2be9c92809f0106f8effc" prot="public" static="no" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t YELLOW</definition>
+        <argsstring></argsstring>
+        <name>YELLOW</name>
+        <initializer>= strip.Color(255, 255, 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="firmware/include/neopixel.h" line="21" column="16" bodyfile="firmware/include/neopixel.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="neopixel_8h_1a93b9e8c04bf7328964c9237b40f4de3f" prot="public" static="no" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t ORANGE</definition>
+        <argsstring></argsstring>
+        <name>ORANGE</name>
+        <initializer>= strip.Color(255, 165, 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="firmware/include/neopixel.h" line="22" column="16" bodyfile="firmware/include/neopixel.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="neopixel_8h_1a390654c06c7e53864060b6343ca77256" prot="public" static="no" mutable="no">
+        <type><ref refid="classLEDStateMachine" kindref="compound">LEDStateMachine</ref></type>
+        <definition>LEDStateMachine ledStateMachine</definition>
+        <argsstring></argsstring>
+        <name>ledStateMachine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="firmware/include/neopixel.h" line="41" column="24" bodyfile="firmware/src/neopixel.cpp" bodystart="8" bodyend="-1" declfile="firmware/include/neopixel.h" declline="41" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="variable" id="neopixel_8h_1a47cf9c329aea05196cb0bb8e9e74b5c6" prot="public" static="no" mutable="no">
+        <type>TaskHandle_t</type>
+        <definition>TaskHandle_t ledTask</definition>
+        <argsstring></argsstring>
+        <name>ledTask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="firmware/include/neopixel.h" line="43" column="21" bodyfile="firmware/src/neopixel.cpp" bodystart="10" bodyend="-1" declfile="firmware/include/neopixel.h" declline="43" declcolumn="21"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="neopixel_8h_1a9db7f13270fe4171352cdd8a1ca1057c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ledTaskCallback</definition>
+        <argsstring>(void *parameter)</argsstring>
+        <name>ledTaskCallback</name>
+        <param>
+          <type>void *</type>
+          <declname>parameter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="firmware/include/neopixel.h" line="44" column="6" declfile="firmware/include/neopixel.h" declline="44" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>NEOPIXEL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NEOPIXEL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Adafruit_NeoPixel.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;state_machine.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NUM_PIXELS<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_BRIGHTNESS<sp/>32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BLINK_PERIOD<sp/>500<sp/></highlight><highlight class="comment">//<sp/>ms</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IDENTIFY_TIMEOUT<sp/>5000<sp/></highlight><highlight class="comment">//<sp/>ms</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>Adafruit_NeoPixel<sp/>strip;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>LED_OFF<sp/><sp/>=<sp/>strip.Color(0,<sp/>0,<sp/>0);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>WHITE<sp/><sp/><sp/><sp/>=<sp/>strip.Color(255,<sp/>255,<sp/>255);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>BLUE<sp/><sp/><sp/><sp/><sp/>=<sp/>strip.Color(0,<sp/>0,<sp/>255);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>GREEN<sp/><sp/><sp/><sp/>=<sp/>strip.Color(0,<sp/>255,<sp/>0);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>RED<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>strip.Color(255,<sp/>0,<sp/>0);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>CYAN<sp/><sp/><sp/><sp/><sp/>=<sp/>strip.Color(0,<sp/>255,<sp/>255);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>MAGENTA<sp/><sp/>=<sp/>strip.Color(255,<sp/>0,<sp/>255);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>YELLOW<sp/><sp/><sp/>=<sp/>strip.Color(255,<sp/>255,<sp/>0);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>ORANGE<sp/><sp/><sp/>=<sp/>strip.Color(255,<sp/>165,<sp/>0);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Class<sp/>representing<sp/>the<sp/>state<sp/>machine</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="classLEDStateMachine" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classLEDStateMachine" kindref="compound">LEDStateMachine</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classStateMachine" kindref="compound">StateMachine</ref><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Constructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLEDStateMachine" kindref="compound">LEDStateMachine</ref>(State<sp/>&amp;initialState)<sp/>:<sp/><ref refid="classStateMachine" kindref="compound">StateMachine</ref>(initialState)<sp/>{}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>begin(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Function<sp/>to<sp/>perform<sp/>actions<sp/>based<sp/>on<sp/>the<sp/>current<sp/>state</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>executeState();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setLEDColor(uint32_t<sp/>color);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>asyncBlink(uint32_t<sp/>color,<sp/>uint32_t<sp/>interval=BLINK_PERIOD);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>asyncAlternatingBlink(uint32_t<sp/>firstColor,<sp/>uint32_t<sp/>secondColor,<sp/>uint32_t<sp/>interval=BLINK_PERIOD);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="classLEDStateMachine" kindref="compound">LEDStateMachine</ref><sp/>ledStateMachine;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>TaskHandle_t<sp/>ledTask;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ledTaskCallback(<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>parameter);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>NEOPIXEL_H</highlight></codeline>
+    </programlisting>
+    <location file="firmware/include/neopixel.h"/>
+  </compounddef>
+</doxygen>

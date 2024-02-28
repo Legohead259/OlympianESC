@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classLEDStateMachine" kind="class" language="C++" prot="public">
+    <compoundname>LEDStateMachine</compoundname>
+    <basecompoundref refid="classStateMachine" prot="public" virt="non-virtual">StateMachine</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classLEDStateMachine_1aee9999fc9ce8437a03c5e783af21d606" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>LEDStateMachine::LEDStateMachine</definition>
+        <argsstring>(State &amp;initialState)</argsstring>
+        <name>LEDStateMachine</name>
+        <param>
+          <type>State &amp;</type>
+          <declname>initialState</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="firmware/include/neopixel.h" line="28" column="5" bodyfile="firmware/include/neopixel.h" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classLEDStateMachine_1a6ed1eea0bc40da373e40e267b46e06ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LEDStateMachine::begin</definition>
+        <argsstring>(void)</argsstring>
+        <name>begin</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="firmware/include/neopixel.h" line="30" column="10" bodyfile="firmware/src/neopixel.cpp" bodystart="16" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classLEDStateMachine_1a5553c8f564dead6ffa8c5f716e6a82cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void LEDStateMachine::executeState</definition>
+        <argsstring>()</argsstring>
+        <name>executeState</name>
+        <reimplements refid="classStateMachine_1a2104bc41da7c2e3142635bfeb9bbfe58">executeState</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="firmware/include/neopixel.h" line="33" column="10" bodyfile="firmware/src/neopixel.cpp" bodystart="22" bodyend="79"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classLEDStateMachine_1afe9fbed7a5c5effc2596ec1749bbf4d1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LEDStateMachine::setLEDColor</definition>
+        <argsstring>(uint32_t color)</argsstring>
+        <name>setLEDColor</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="firmware/include/neopixel.h" line="36" column="10" bodyfile="firmware/src/neopixel.cpp" bodystart="81" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classLEDStateMachine_1aeb810862a1e8b3d1f1f52831c7245b59" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LEDStateMachine::asyncBlink</definition>
+        <argsstring>(uint32_t color, uint32_t interval=BLINK_PERIOD)</argsstring>
+        <name>asyncBlink</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>interval</declname>
+          <defval>BLINK_PERIOD</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="firmware/include/neopixel.h" line="37" column="10" bodyfile="firmware/src/neopixel.cpp" bodystart="87" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classLEDStateMachine_1a12acd4b1a2a8a759d5eecf8462d5f2d6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LEDStateMachine::asyncAlternatingBlink</definition>
+        <argsstring>(uint32_t firstColor, uint32_t secondColor, uint32_t interval=BLINK_PERIOD)</argsstring>
+        <name>asyncAlternatingBlink</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>firstColor</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>secondColor</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>interval</declname>
+          <defval>BLINK_PERIOD</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="firmware/include/neopixel.h" line="38" column="10" bodyfile="firmware/src/neopixel.cpp" bodystart="94" bodyend="101"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>LEDStateMachine</label>
+        <link refid="classLEDStateMachine"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>StateMachine</label>
+        <link refid="classStateMachine"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>LEDStateMachine</label>
+        <link refid="classLEDStateMachine"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>StateMachine</label>
+        <link refid="classStateMachine"/>
+      </node>
+    </collaborationgraph>
+    <location file="firmware/include/neopixel.h" line="25" column="1" bodyfile="firmware/include/neopixel.h" bodystart="25" bodyend="39"/>
+    <listofallmembers>
+      <member refid="classLEDStateMachine_1a12acd4b1a2a8a759d5eecf8462d5f2d6" prot="private" virt="non-virtual"><scope>LEDStateMachine</scope><name>asyncAlternatingBlink</name></member>
+      <member refid="classLEDStateMachine_1aeb810862a1e8b3d1f1f52831c7245b59" prot="private" virt="non-virtual"><scope>LEDStateMachine</scope><name>asyncBlink</name></member>
+      <member refid="classLEDStateMachine_1a6ed1eea0bc40da373e40e267b46e06ac" prot="public" virt="non-virtual"><scope>LEDStateMachine</scope><name>begin</name></member>
+      <member refid="classStateMachine_1a2a66289bc12dcbc88266ef25c2f1491a" prot="protected" virt="non-virtual"><scope>LEDStateMachine</scope><name>currentState</name></member>
+      <member refid="classLEDStateMachine_1a5553c8f564dead6ffa8c5f716e6a82cd" prot="public" virt="virtual"><scope>LEDStateMachine</scope><name>executeState</name></member>
+      <member refid="classLEDStateMachine_1aee9999fc9ce8437a03c5e783af21d606" prot="public" virt="non-virtual"><scope>LEDStateMachine</scope><name>LEDStateMachine</name></member>
+      <member refid="classLEDStateMachine_1afe9fbed7a5c5effc2596ec1749bbf4d1" prot="private" virt="non-virtual"><scope>LEDStateMachine</scope><name>setLEDColor</name></member>
+      <member refid="classStateMachine_1a758c235d91376142e3bd137e5f894bac" prot="public" virt="non-virtual"><scope>LEDStateMachine</scope><name>StateMachine</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
