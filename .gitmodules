@@ -1,6 +1,7 @@
 [submodule "firmware"]
 	path = firmware
 	url = https://github.com/Legohead259/OlympianESC-Firmware
+	branch = docs
 [submodule "hardware"]
 	path = hardware
 	url = https://github.com/Legohead259/OlympianESC-Hardware
