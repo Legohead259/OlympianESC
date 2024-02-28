@@ -27,7 +27,7 @@ jobs:
           git submodule update --init --remote
       - name: Doxygen build
         run: |
-          (cat firmware/docs/Doxyfile ; echo "Input=\"firmware/src\" \"firmware/lib\" \"firmware/include\"") | doxygen -
+          (cat firmware/docs/Doxyfile ; echo "INPUT=\"firmware/src\" \"firmware/lib\" \"firmware/include\"") | doxygen -
       # - name: Sphinx build
       #   run: |
       #     sphinx-build docs/source docs/build
