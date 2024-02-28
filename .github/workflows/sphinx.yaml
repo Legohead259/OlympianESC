@@ -24,7 +24,7 @@ jobs:
           pip install sphinx sphinx_rtd_theme myst_parser breathe
       - name: Doxygen build
         run: |
-          doxygen docs/Doxyfile
+          (cat firmware/docs/Doxyfile ; echo "Input=\"firmware/src\" \"firmware/lib\" \"firmware/include\"") | doxygen -
       # - name: Sphinx build
       #   run: |
       #     sphinx-build docs/source docs/build
